@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transition</title>
+    <style>
+        .pseudo{
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            border: 2px solid black;
+            border-radius: 10px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;/*we can also use steps(k) like k=3*/
+            transition-delay: 0s;
+            /* transition: all 1s ease-in-out 0s;  */
+            /* so you can use a single line instesd of above 4 line */
+        }
+        .pseudo:hover{
+            height: 30px;
+            width: 160px;
+            background-color: red;
+        }
+        .pseudo:active{
+            height: 30px;
+            font-weight: 160px;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Learning pseudo</button>
+</body>
+</html>
